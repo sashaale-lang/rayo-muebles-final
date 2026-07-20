@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayo - Proceso de Compra</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="barrarriba">
+        <p>ENTORNO DE PAGO SEGURO</p>
+    </div>
+
+    <header class="navbarra">
+        <div class="logocontenedor" onclick="location.href='index.html'" style="cursor: pointer;">
+            <img src="imagenes/logo.svg" alt="Logo Rayo" class="logoimg">
+            <span class="logotexto">RAYO</span>
+        </div>
+        <nav>
+            <a href="index.html">Volver al Sitio</a>
+            <a href="productos.html">Catálogo</a>
+        </nav>
+    </header>
+
+    <main class="checkout-main">
+        <h2 class="checkout-titulo">Finalizar tu Compra</h2>
+        <p class="checkout-subtitulo">Completá los pasos para procesar tu orden de diseño retro.</p>
+
+        <div class="checkout-layout">
+            <div class="pasos-contenedor">
+                <div class="paso-bloque amarillo">
+                    <div class="paso-encabezado">
+                        <span class="paso-numero">1</span>
+                        <h3>Datos Personales y Envío</h3>
+                    </div>
+                    <div class="paso-contenido">
+                        <div class="formulario-grupo">
+                            <label>Nombre Completo</label>
+                            <input type="text" placeholder="Sasha Ale" required>
+                        </div>
+                        <div class="formulario-grupo">
+                            <label>Correo Electrónico</label>
+                            <input type="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="formulario-grupo-doble">
+                            <div class="formulario-grupo">
+                                <label>Dirección de Entrega</label>
+                                <input type="text" placeholder="Av. de Mayo 1200" required>
+                            </div>
+                            <div class="formulario-grupo">
+                                <label>Localidad / Provincia</label>
+                                <input type="text" placeholder="Caseros, Buenos Aires" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paso-bloque azul">
+                    <div class="paso-encabezado">
+                        <span class="paso-numero">2</span>
+                        <h3>Método de Pago</h3>
+                    </div>
+                    <div class="paso-contenido">
+                        <div class="metodos-tarjetas">
+                            <label class="metodo-opcion">
+                                <input type="radio" name="pago" checked> Tarjeta de Crédito / Débito
+                            </label>
+                            <label class="metodo-opcion">
+                                <input type="radio" name="pago"> Mercado Pago / Transferencia
+                            </label>
+                        </div>
+                        <div class="formulario-grupo">
+                            <label>Número de Tarjeta</label>
+                            <input type="text" placeholder="0000 0000 0000 0000">
+                        </div>
+                        <div class="formulario-grupo-doble">
+                            <div class="formulario-grupo">
+                                <label>Vencimiento</label>
+                                <input type="text" placeholder="MM/AA">
+                            </div>
+                            <div class="formulario-grupo">
+                                <label>Código CVC</label>
+                                <input type="text" placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paso-bloque rosa">
+                    <div class="paso-encabezado">
+                        <span class="paso-numero">3</span>
+                        <h3>Confirmación de la Orden</h3>
+                    </div>
+                    <div class="paso-contenido centro-texto">
+                        <p class="alerta-texto">Al hacer clic en el botón de abajo, confirmás la reserva y fabricación de tus muebles a medida.</p>
+                        <button type="button" class="btnprincipal" onclick="abrirPopUp()">Confirmar Pedido y Pagar</button>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="resumen-compra">
+                <h3>Resumen del Pedido</h3>
+                <div class="resumen-items">
+                    <div class="resumen-item">
+                        <p>1x Rack Vintage (Azul)</p>
+                        <strong>$220.450</strong>
+                    </div>
+                    <div class="resumen-item">
+                        <p>1x Lámpara Retro (Azul)</p>
+                        <strong>$190.100</strong>
+                    </div>
+                </div>
+                <div class="resumen-totales">
+                    <div class="total-linea">
+                        <span>Subtotal:</span>
+                        <span>$410.550</span>
+                    </div>
+                    <div class="total-linea">
+                        <span>Envío:</span>
+                        <span class="gratis-texto">¡GRATIS!</span>
+                    </div>
+                    <hr class="divisor-resumen">
+                    <div class="total-linea final">
+                        <span>Total:</span>
+                        <strong>$410.550</strong>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <div id="popupExito" class="popup-overlay">
+        <div class="popup-tarjeta">
+            <h2>¡Compra Procesada!</h2>
+            <p>Tu orden de diseño retro ya fue registrada. Te enviamos los detalles del seguimiento por correo electrónico.</p>
+            <button class="btnprincipal" onclick="cerrarPopUp()">Aceptar</button>
+        </div>
+    </div>
+
+    <script>
+        function abrirPopUp() {
+            document.getElementById('popupExito').classList.add('mostrar-popup');
+        }
+        function cerrarPopUp() {
+            document.getElementById('popupExito').classList.remove('mostrar-popup');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

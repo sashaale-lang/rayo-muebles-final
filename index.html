@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayo - Muebles Retro</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="barrarriba">
+        <p>ENVÍO GRATIS EN COMPRAS SUPERIORES A $150.000</p>
+    </div>
+
+    <header class="navbarra">
+        <div class="logocontenedor" onclick="location.href='index.html'" style="cursor: pointer;">
+            <img src="imagenes/logo.svg" alt="Logo Rayo" class="logoimg">
+            <span class="logotexto">RAYO</span>
+        </div>
+        
+        
+        <div class="nav-derecha-mobile">
+            <a href="#" class="icon-link-mob"><img src="imagenes/lupa.svg" alt="Buscar" class="iconimg"></a>
+            <a href="checkout.html" class="icon-link-mob"><img src="imagenes/carrocompra.svg" alt="Carrito" class="iconimg"></a>
+            <button class="menu-hamburguesa" onclick="toggleMenu()">☰</button>
+        </div>
+        
+      
+        <nav id="navMenu">
+            <button class="menu-cerrar" onclick="toggleMenu()">×</button>
+            <a href="index.html" class="active" onclick="toggleMenu()">Inicio</a>
+            <a href="productos.html" onclick="toggleMenu()">Productos</a>
+            <a href="#nosotros" onclick="toggleMenu()">Nosotros</a>
+            <a href="#categorias" onclick="toggleMenu()">Categorías</a>
+            <a href="#historial" onclick="toggleMenu()">Mis Pedidos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="portada">
+            <div class="portadatexto">
+                <h2>DISEÑO RETRO,</h2>
+                <h2>ÚNICO Y FUNCIONAL</h2>
+                <h1>Elegí muebles con estilo o creá el tuyo</h1>
+                <h1>propio con nuestra fabricación a medida.</h1>
+                <a href="productos.html" class="btnprincipal">Ver catálogo</a>
+            </div>
+            <div class="portadaimg">
+                <img src="imagenes/portadaprincipal.png" alt="Portada Rayo" class="portadaimg1">
+            </div>
+        </section>
+
+      
+        <section id="catalogo" class="bestsellers">
+            <div class="seccionencabezado">
+                <h2>Bestsellers</h2>
+                <button class="btnvertodos" onclick="location.href='productos.html'">Ver todos →</button>
+            </div>
+            
+            <div class="productosgrid">
+                <div class="tarjetaproducto amarillo">
+                    <div class="fotoproducto"><img src="imagenes/producto1.png" alt=""></div>
+                    <div class="infoproducto">
+                        <p class="prod-titulo">Mesa Nórdica</p>
+                        <p class="prod-desc">Madera maciza de líneas limpias.</p>
+                        <div class="prod-pie">
+                            <span>$112.250</span>
+                            <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetaproducto azul">
+                    <div class="fotoproducto"><img src="imagenes/producto2.png" alt=""></div>
+                    <div class="infoproducto">
+                        <p class="prod-titulo">Rack Vintage</p>
+                        <p class="prod-desc">Diseño funcional de los años 60.</p>
+                        <div class="prod-pie">
+                            <span>$220.450</span>
+                            <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetaproducto rosa">
+                    <div class="fotoproducto"><img src="imagenes/producto3.png" alt=""></div>
+                    <div class="infoproducto">
+                        <p class="prod-titulo">Mueble Color</p>
+                        <p class="prod-desc">Combinación geométrica pastel.</p>
+                        <div class="prod-pie">
+                            <span>$340.850</span>
+                            <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetaproducto naranja">
+                    <div class="fotoproducto"><img src="imagenes/producto4.png" alt=""></div>
+                    <div class="infoproducto">
+                        <p class="prod-titulo">Sillon Rod</p>
+                        <p class="prod-desc">Tapizado premium, confort retro.</p>
+                        <div class="prod-pie">
+                            <span>$330.200</span>
+                            <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetaproducto azul">
+                    <div class="fotoproducto"><img src="imagenes/producto5.png" alt=""></div>
+                    <div class="infoproducto">
+                        <p class="prod-titulo">Lámpara Retro</p>
+                        <p class="prod-desc">Iluminación ambiental de colección.</p>
+                        <div class="prod-pie">
+                            <span>$190.100</span>
+                            <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetaproducto rosa">
+                    <div class="fotoproducto"><img src="imagenes/producto6.png" alt=""></div>
+                    <div class="infoproducto">
+                        <p class="prod-titulo">Duo Cafe</p>
+                        <p class="prod-desc">Juego de living compacto mid-century.</p>
+                        <div class="prod-pie">
+                            <span>$705.900</span>
+                            <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetaproducto naranja">
+                    <div class="fotoproducto"><img src="imagenes/producto7.png" alt=""></div>
+                    <div class="infoproducto">
+                        <p class="prod-titulo">Rack Ovalo</p>
+                        <p class="prod-desc">Líneas orgánicas y estantes curvos.</p>
+                        <div class="prod-pie">
+                            <span>$430.000</span>
+                            <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetaproducto amarillo">
+                    <div class="fotoproducto"><img src="imagenes/producto8.png" alt=""></div>
+                    <div class="infoproducto">
+                        <p class="prod-titulo">Mueble Unico</p>
+                        <p class="prod-desc">Pieza artesanal de edición limitada.</p>
+                        <div class="prod-pie">
+                            <span>$121.500</span>
+                            <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="categorias" class="categoriascontenedor">
+            <div class="listacategorias">
+                <h2>Nuestras Categorias</h2>
+                <div class="itemcat amarillo" onclick="location.href='productos.html'">
+                    <div class="catinfo"><strong>Muebles</strong><p>Mesas y sillas vintage.</p></div>
+                </div>
+                <div class="itemcat azul" onclick="location.href='productos.html'">
+                    <div class="catinfo"><strong>Decoración</strong><p>Detalles para tu hogar.</p></div>
+                </div>
+                <div class="itemcat rosa" onclick="location.href='productos.html'">
+                    <div class="catinfo"><strong>Accesorios</strong><p>Objetos con historia.</p></div>
+                </div>
+            </div>
+            <div class="promocustom">
+                <div class="customtexto">
+                    <h3>Creá tu propio mueble</h3>
+                    <p>Nosotros la fabricamos a medida con los colores que elijas.</p>
+                    <button class="btnprincipal" onclick="location.href='productos.html'">Empezar ahora</button>
+                </div>
+                <div class="customimg">
+                    <img src="imagenes/creatumueble.png" alt="Personalizar">
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="valores">
+            <div class="valoritem">
+                <img src="imagenes/icono-calidad.png" alt="Calidad" class="valorimgicono">
+                <h4>Calidad Artesanal</h4>
+                <p>Hecho a mano con maderas nobles seleccionadas.</p>
+            </div>
+            <div class="valoritem">
+                <img src="imagenes/icono-envios.png" alt="Envios" class="valorimgicono">
+                <h4>Envíos Seguros</h4>
+                <p>Llegamos de forma segura a cualquier rincón del país.</p>
+            </div>
+            <div class="valoritem">
+                <img src="imagenes/icono-eco.png" alt="Sustentable" class="valorimgicono">
+                <h4>Sustentable</h4>
+                <p>Procesos conscientes que cuidan activamente el planeta.</p>
+            </div>
+        </section>
+
+        <section id="historial" class="historial-contenedor">
+            <h2>Historial de Pedidos</h2>
+            <p class="historial-subtexto">Revisá el estado y detalle de tus órdenes anteriores en RAYO.</p>
+            
+            <div class="historial-tabla">
+                <div class="orden-item">
+                    <div class="orden-info">
+                        <strong>Orden #RY-8402</strong>
+                        <span>14 de Mayo, 2026</span>
+                    </div>
+                    <div class="orden-detalles">
+                        <p>1x Rack Vintage (Azul)</p>
+                        <strong>$220.450</strong>
+                    </div>
+                    <div class="orden-estado entregado">Entregado</div>
+                </div>
+
+                <div class="orden-item">
+                    <div class="orden-info">
+                        <strong>Orden #RY-7915</strong>
+                        <span>02 de Abril, 2026</span>
+                    </div>
+                    <div class="orden-detalles">
+                        <p>1x Lámpara Retro (Azul) + 1x Mesa Nórdica</p>
+                        <strong>$302.350</strong>
+                    </div>
+                    <div class="orden-estado en-camino">En camino</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footertop">
+            <div class="footermarca">
+                <h3>RAYO</h3>
+                <p>Muebles con diseño retro para hogares únicos.</p>
+            </div>
+            <div class="footerlinks">
+                <h4>Navegación</h4>
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#historial">Mis Pedidos</a>
+            </div>
+            <div class="footernewsletter">
+                <h4>Seguinos</h4>
+                <div class="redes">
+                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><img src="imagenes/instagram.svg" alt="Instagram" class="socialimg"></a>
+                    <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer"><img src="imagenes/facebook.svg" alt="Facebook" class="socialimg"></a>
+                </div>
+                <div class="newsletterinput">
+                    <input type="email" placeholder="tu@email.com">
+                    <button class="btnsend">→</button>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Rayo Muebles. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('menu-abierto');
+        }
+    </script>
+</body>
+</html>

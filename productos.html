@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayo - Catálogo de Productos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="barrarriba">
+        <p>ENVÍO GRATIS EN COMPRAS SUPERIORES A $150.000</p>
+    </div>
+
+    <header class="navbarra">
+        <div class="logocontenedor" onclick="location.href='index.html'" style="cursor: pointer;">
+            <img src="imagenes/logo.svg" alt="Logo Rayo" class="logoimg">
+            <span class="logotexto">RAYO</span>
+        </div>
+        
+        <div class="nav-derecha-mobile">
+            <a href="#" class="icon-link-mob"><img src="imagenes/lupa.svg" alt="Buscar" class="iconimg"></a>
+            <a href="checkout.html" class="icon-link-mob"><img src="imagenes/carrocompra.svg" alt="Carrito" class="iconimg"></a>
+            <button class="menu-hamburguesa" onclick="toggleMenu()">☰</button>
+        </div>
+        
+        <nav id="navMenu">
+            <button class="menu-cerrar" onclick="toggleMenu()">×</button>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html" class="active">Productos</a>
+            <a href="index.html#nosotros">Nosotros</a>
+            <a href="index.html#historial">Mis Pedidos</a>
+        </nav>
+    </header>
+
+    <main class="tienda-main">
+        <div class="tienda-layout">
+            <aside class="tienda-filtros">
+                <h3>Filtrar por</h3>
+                <div class="filtro-grupo">
+                    <h4>Categorías</h4>
+                    <label><input type="checkbox" checked> Muebles</label>
+                    <label><input type="checkbox"> Decoración</label>
+                </div>
+                <div class="filtro-grupo">
+                    <h4>Color Retro</h4>
+                    <label><input type="checkbox"> Amarillo Pastel</label>
+                    <label><input type="checkbox"> Azul Aero</label>
+                    <label><input type="checkbox"> Rosa Carmesí</label>
+                </div>
+            </aside>
+
+            <section class="tienda-contenido">
+                <div class="tienda-encabezado">
+                    <h2>Catálogo Completo</h2>
+                    <p>8 productos encontrados</p>
+                </div>
+
+                <div class="productosgrid">
+                    <div class="tarjetaproducto amarillo">
+                        <div class="fotoproducto"><img src="imagenes/producto1.png" alt=""></div>
+                        <div class="infoproducto">
+                            <p class="prod-titulo">Mesa Nórdica</p>
+                            <p class="prod-desc">Madera maciza de líneas limpias.</p>
+                            <div class="prod-pie">
+                                <span>$112.250</span>
+                                <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjetaproducto azul">
+                        <div class="fotoproducto"><img src="imagenes/producto2.png" alt=""></div>
+                        <div class="infoproducto">
+                            <p class="prod-titulo">Rack Vintage</p>
+                            <p class="prod-desc">Diseño funcional de los años 60.</p>
+                            <div class="prod-pie">
+                                <span>$220.450</span>
+                                <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjetaproducto rosa">
+                        <div class="fotoproducto"><img src="imagenes/producto3.png" alt=""></div>
+                        <div class="infoproducto">
+                            <p class="prod-titulo">Mueble Color</p>
+                            <p class="prod-desc">Combinación geométrica pastel.</p>
+                            <div class="prod-pie">
+                                <span>$340.850</span>
+                                <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjetaproducto naranja">
+                        <div class="fotoproducto"><img src="imagenes/producto4.png" alt=""></div>
+                        <div class="infoproducto">
+                            <p class="prod-titulo">Sillon Rod</p>
+                            <p class="prod-desc">Tapizado premium, confort retro.</p>
+                            <div class="prod-pie">
+                                <span>$330.200</span>
+                                <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjetaproducto azul">
+                        <div class="fotoproducto"><img src="imagenes/producto5.png" alt=""></div>
+                        <div class="infoproducto">
+                            <p class="prod-titulo">Lámpara Retro</p>
+                            <p class="prod-desc">Iluminación ambiental de colección.</p>
+                            <div class="prod-pie">
+                                <span>$190.100</span>
+                                <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjetaproducto rosa">
+                        <div class="fotoproducto"><img src="imagenes/producto6.png" alt=""></div>
+                        <div class="infoproducto">
+                            <p class="prod-titulo">Duo Cafe</p>
+                            <p class="prod-desc">Juego de living compacto mid-century.</p>
+                            <div class="prod-pie">
+                                <span>$705.900</span>
+                                <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjetaproducto naranja">
+                        <div class="fotoproducto"><img src="imagenes/producto7.png" alt=""></div>
+                        <div class="infoproducto">
+                            <p class="prod-titulo">Rack Ovalo</p>
+                            <p class="prod-desc">Líneas orgánicas y estantes curvos.</p>
+                            <div class="prod-pie">
+                                <span>$430.000</span>
+                                <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjetaproducto amarillo">
+                        <div class="fotoproducto"><img src="imagenes/producto8.png" alt=""></div>
+                        <div class="infoproducto">
+                            <p class="prod-titulo">Mueble Unico</p>
+                            <p class="prod-desc">Pieza artesanal de edición limitada.</p>
+                            <div class="prod-pie">
+                                <span>$121.500</span>
+                                <button class="addbtn" onclick="location.href='checkout.html'">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright" style="margin-top: 0;">© 2026 Rayo Muebles. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('menu-abierto');
+        }
+    </script>
+</body>
+</html>
